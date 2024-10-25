@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Демонстрація CSS-стилів</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Стилізація за допомогою контейнера <style> */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .sidebar {
+            float: left;
+            width: 25%;
+            padding: 15px;
+            background-color: #e7e7e7;
+        }
+
+        .main-content {
+            float: right;
+            width: 70%;
+            padding: 15px;
+            background-color: #ffffff;
+        }
+
+        .footer {
+            clear: both;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #floating-box {
+            position: absolute;
+            top: 100px;
+            right: 20px;
+            width: 150px;
+            padding: 10px;
+            background-color: #ffcc00;
+            color: black;
+            border-radius: 5px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+<header class="header">
+    <h1>Демонстрація використання CSS-стилів</h1>
+</header>
+
+<div class="content">
+    <nav class="sidebar">
+        <ul>
+            <li><a href="#home">Головна</a></li>
+            <li><a href="#about">Про нас</a></li>
+            <li><a href="#services">Послуги</a></li>
+            <li><a href="#contact">Контакти</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-content">
+        <h2 id="home">Головна</h2>
+        <p style="color: #333;">Це сторінка для демонстрації різних способів застосування CSS. Ви побачите приклади inline-стилізації, внутрішніх стилів у секції &lt;style&gt; та зовнішніх таблиць стилів.</p>
+
+        <h2 id="about">Про нас</h2>
+        <p>Наша компанія займається розробкою якісних веб-додатків. Ми пропонуємо інноваційні рішення та підтримуємо своїх клієнтів на кожному етапі.</p>
+
+        <h2 id="services">Послуги</h2>
+        <p>Серед наших послуг: розробка веб-сайтів, технічна підтримка та SEO-оптимізація.</p>
+
+        <h2 id="contact">Контакти</h2>
+        <p>Зв'яжіться з нами через <a href="mailto:info@example.com">info@example.com</a> або за телефоном +380 123 456 789.</p>
+
+        <h2>Виберіть опцію</h2>
+        <div class="radio-container">
+            <label class="radio-label">
+                <input type="radio" name="option" class="radio-input" checked>
+                <span class="radio-custom"></span> Опція 1
+            </label>
+            <label class="radio-label">
+                <input type="radio" name="option" class="radio-input">
+                <span class="radio-custom"></span> Опція 2
+            </label>
+            <label class="radio-label">
+                <input type="radio" name="option" class="radio-input">
+                <span class="radio-custom"></span> Опція 3
+            </label>
+        </div>
+    </section>
+
+    <div id="floating-box">
+        <p>Цей блок використовує абсолютне позиціонування.</p>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="flex-container">
+        <div class="block block-1">1</div>
+        <div class="block block-2">2</div>
+        <div class="block block-3">3</div>
+        <div class="block block-4">4</div>
+    </div>
+    <p>&copy; 2024 Всі права захищені.</p>
+</footer>
+</body>
+</html>
