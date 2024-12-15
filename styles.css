@@ -44,7 +44,6 @@
     gap: 10px;
 }
 
-/* Загальні стилі для блоків */
 .block {
     width: 100px;
     height: 100px;
@@ -72,4 +71,26 @@
 .block-4 {
     background-color: red;
     order: 2;
+}
+.cloud {
+    display: flex;
+    position: relative;
+}
+.cloud_part {
+    position:absolute;
+    width:20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: cornflowerblue;
+}
+.cloud1 {
+    left: 25px;
+    top: 1px;
+}
+.cloud2 {
+    left: 14px;
+    top: -6px;
+}
+.cloud3 {
+    left: 2px;
 }
